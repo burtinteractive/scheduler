@@ -24,7 +24,7 @@ $res =$db2->select($query,$con2);?>
 <h4>Current Active Meetings</h4>
 <?php
 //on delete set active to 0 
-while($row = mysql_fetch_array($res)){
+while($row = mysqli_fetch_array($res)){
 	
 	echo $row['date_submitted']."  <a href='index.php?id=".$row['id']."&view=".$row['random_num']."'>description:  ".$row['description']."</a><a href='#' onclick=\"deleteMeeting('".$row['id']."')\" style='float:right;'>delete meeting</a><br/>";
 
