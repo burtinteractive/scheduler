@@ -28,7 +28,6 @@ class db_conn{
   			echo $db;
   			echo "Failed to connect to MySQL: " . mysqli_connect_error();
   		}
-		 //$conn =mysql_connect($this->host, $this->user, $this->pass)or die(mysql_error());
 		 return $conn;
 	}
 	public function close($con){
@@ -58,8 +57,7 @@ class db_conn{
 			$list = "";
 			$department="";
 			$res = mysqli_query($con,"$query");
-			//$list .="<div class='dept_con' >";
-			//$list .="<ul>\n\r";
+			
 			$curr_dept="";
 			$count=5;
 			$row_count=0;
