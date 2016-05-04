@@ -33,7 +33,7 @@ $query="select * from request where user_id =".$_SESSION['user_id']." and active
 $res =$db2->select($query,$con2);
 echo "<div id='hidden_div' style='display:none;' class='old_links'>";
 ?><h4>Deleted Meetings</h4><?php
-while($row = mysql_fetch_array($res)){
+while($row = mysqli_fetch_array($res)){
 	
 	echo $row['date_submitted']."  <a class='old_links' href='index.php?id=".$row['id']."&view=".$row['random_num']."' >description:  ".$row['description']."</a><br/>";//<a href='#' onclick=\"activateMeeting('".$row['id']."')\" style='float:right;'>reactivate</a><br/>";
 
