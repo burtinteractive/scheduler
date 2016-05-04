@@ -30,7 +30,7 @@ if(isset($_GET['mes'])){
 <body>
 	<div class="row">
 		<div class="small-12 large-12 columns">
-			<img src="images/MeetingScheduler_final.jpg">
+			<img src="images/scheduler_logo.png">
 		</div>
 	</div>
 	<div class="row">
